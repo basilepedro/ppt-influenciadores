@@ -360,7 +360,7 @@
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 10px;
-    padding: 32px 28px;
+    padding: 24px 20px;
     position: relative; overflow: hidden;
     transition: transform 0.3s, border-color 0.3s;
   }
@@ -379,7 +379,7 @@
   .scenario-leads { font-size: 13px; color: rgba(255,255,255,0.55); margin-bottom: 8px; }
   .scenario-ticket-avg { font-size: 12px; color: rgba(255,255,255,0.4); margin-bottom: 20px; }
   .scenario-earned {
-    font-size: 42px; font-weight: 800;
+    font-size: 36px; font-weight: 800;
     color: var(--white); line-height: 1;
     margin-bottom: 4px;
   }
@@ -863,44 +863,16 @@ function showScenario(name) {
         </table>
       </div>
 
-      <!-- ADVOCACIA SEM VALORES (OAB) -->
-      <div style="margin-bottom:24px;">
+      <!-- ADVOCACIA - NOTA OAB APENAS -->
+      <div style="margin-bottom:24px;background:rgba(0,77,255,0.05);border:1px solid rgba(0,77,255,0.15);border-radius:8px;padding:18px 20px;">
         <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;display:flex;align-items:center;gap:8px;">
           <span style="background:var(--blue);width:20px;height:2px;display:block;"></span>Advocacia Internacional
         </div>
-        <table class="services-table" style="font-size:13px;">
-          <thead><tr>
-            <th>Serviço</th>
-            <th style="text-align:right;" colspan="2">Comissão</th>
-          </tr></thead>
-          <tbody>
-            <tr><td class="svc-name">Divórcio internacional</td><td class="svc-commission" colspan="2" style="font-size:11px;">Sob consulta · até R$ 2.500</td></tr>
-            <tr><td class="svc-name">Guarda internacional</td><td class="svc-commission" colspan="2" style="font-size:11px;">Sob consulta · até R$ 2.200</td></tr>
-            <tr><td class="svc-name">Planejamento sucessório</td><td class="svc-commission" colspan="2" style="font-size:11px;">Sob consulta · até R$ 3.000</td></tr>
-            <tr><td class="svc-name">Inventário internacional</td><td class="svc-commission" colspan="2" style="font-size:11px;">Sob consulta · até R$ 3.500</td></tr>
-          </tbody>
-        </table>
-        <div style="font-size:11px;color:var(--gray);margin-top:8px;font-style:italic;">⚖️ Por norma da OAB, honorários de advocacia não são divulgados publicamente. A comissão é calculada após o fechamento do contrato.</div>
+        <div style="font-size:13px;color:var(--navy);font-weight:600;margin-bottom:6px;">Divórcio, Guarda, Inventário e Planejamento Sucessório Internacional</div>
+        <div style="font-size:12px;color:var(--gray);line-height:1.7;">⚖️ Por norma da OAB, honorários de advocacia não podem ser divulgados publicamente. Você também ganha 10% de comissão sobre esses serviços. O valor é calculado após o fechamento do contrato com cada cliente.</div>
       </div>
 
-      <!-- ESTRANGEIROS -->
-      <div>
-        <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#00a340;margin-bottom:10px;display:flex;align-items:center;gap:8px;">
-          <span style="background:#00a340;width:20px;height:2px;display:block;"></span>Para Estrangeiros no Brasil
-        </div>
-        <table class="services-table" style="font-size:13px;">
-          <thead><tr>
-            <th>Serviço</th>
-            <th style="text-align:right;">Ticket médio</th>
-            <th style="text-align:right;">Sua comissão</th>
-          </tr></thead>
-          <tbody>
-            <tr><td class="svc-name">Residência por investimento</td><td class="svc-ticket">R$ 15.000</td><td class="svc-commission">R$ 1.500</td></tr>
-            <tr><td class="svc-name">Residência por trabalho</td><td class="svc-ticket">R$ 10.000</td><td class="svc-commission">R$ 1.000</td></tr>
-            <tr><td class="svc-name">Soft landing Brasil</td><td class="svc-ticket">R$ 18.000</td><td class="svc-commission">R$ 1.800</td></tr>
-          </tbody>
-        </table>
-      </div>
+
     </div>
   </div>
 
@@ -935,7 +907,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Ex: Cidadania Portuguesa</div>
           <div class="scenario-earned"><span class="currency">R$</span>800</div>
           <div class="scenario-period">por mês · R$ 9.600 / ano</div>
-          <div class="scenario-breakdown">10% sobre R$ 8.000</div>
+          <div class="scenario-breakdown" style="display:none;">10% sobre R$ 8.000</div>
         </div>
         <div class="scenario-card best">
           <div class="best-badge">⭐ Referência</div>
@@ -944,7 +916,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Mix: Portuguesa + Italiana</div>
           <div class="scenario-earned"><span class="currency">R$</span>5.600</div>
           <div class="scenario-period">por mês · R$ 67.200 / ano</div>
-          <div class="scenario-breakdown">2x R$800 + 1x R$2.800</div>
+          <div class="scenario-breakdown" style="display:none;">2x R$800 + 1x R$2.800</div>
         </div>
         <div class="scenario-card">
           <div class="scenario-label">Otimista</div>
@@ -952,7 +924,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Mix variado</div>
           <div class="scenario-earned"><span class="currency">R$</span>11.600</div>
           <div class="scenario-period">por mês · R$ 139.200 / ano</div>
-          <div class="scenario-breakdown">2x portuguesa, 2x espanhola e 1x italiana</div>
+          <div class="scenario-breakdown" style="display:none;">2x portuguesa, 2x espanhola e 1x italiana</div>
         </div>
       </div>
     </div>
@@ -966,7 +938,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Ex: Visto E-1</div>
           <div class="scenario-earned"><span class="currency">R$</span>3.500</div>
           <div class="scenario-period">por mês · R$ 42.000 / ano</div>
-          <div class="scenario-breakdown">10% sobre R$ 35.000</div>
+          <div class="scenario-breakdown" style="display:none;">10% sobre R$ 35.000</div>
         </div>
         <div class="scenario-card best">
           <div class="best-badge">⭐ Referência</div>
@@ -975,7 +947,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">EB-2 NIW + E-2</div>
           <div class="scenario-earned"><span class="currency">R$</span>9.800</div>
           <div class="scenario-period">por mês · R$ 117.600 / ano</div>
-          <div class="scenario-breakdown">R$6.000 e R$3.800</div>
+          <div class="scenario-breakdown" style="display:none;">R$6.000 e R$3.800</div>
         </div>
         <div class="scenario-card">
           <div class="scenario-label">Otimista</div>
@@ -983,7 +955,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">EB-2 + L-1 + E-2</div>
           <div class="scenario-earned"><span class="currency">R$</span>16.000</div>
           <div class="scenario-period">por mês · R$ 192.000 / ano</div>
-          <div class="scenario-breakdown">R$6.000, R$4.200 e R$3.800</div>
+          <div class="scenario-breakdown" style="display:none;">R$6.000, R$4.200 e R$3.800</div>
         </div>
       </div>
     </div>
@@ -997,7 +969,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Ex: Residência Espanha</div>
           <div class="scenario-earned"><span class="currency">R$</span>1.600</div>
           <div class="scenario-period">por mês · R$ 19.200 / ano</div>
-          <div class="scenario-breakdown">2x R$800</div>
+          <div class="scenario-breakdown" style="display:none;">2x R$800</div>
         </div>
         <div class="scenario-card best">
           <div class="best-badge">⭐ Referência</div>
@@ -1006,7 +978,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Portugal + Alemanha</div>
           <div class="scenario-earned"><span class="currency">R$</span>5.400</div>
           <div class="scenario-period">por mês · R$ 64.800 / ano</div>
-          <div class="scenario-breakdown">2x R$1.000 + R$1.800 + R$1.600</div>
+          <div class="scenario-breakdown" style="display:none;">2x R$1.000 + R$1.800 + R$1.600</div>
         </div>
         <div class="scenario-card">
           <div class="scenario-label">Otimista</div>
@@ -1014,7 +986,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Mix variado Europa</div>
           <div class="scenario-earned"><span class="currency">R$</span>9.200</div>
           <div class="scenario-period">por mês · R$ 110.400 / ano</div>
-          <div class="scenario-breakdown">Residências, Blue Card e Job Seeker</div>
+          <div class="scenario-breakdown" style="display:none;">Residências, Blue Card e Job Seeker</div>
         </div>
       </div>
     </div>
@@ -1028,7 +1000,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Ex: Abertura empresa EUA</div>
           <div class="scenario-earned"><span class="currency">R$</span>1.200</div>
           <div class="scenario-period">por mês · R$ 14.400 / ano</div>
-          <div class="scenario-breakdown">10% sobre R$ 12.000</div>
+          <div class="scenario-breakdown" style="display:none;">10% sobre R$ 12.000</div>
         </div>
         <div class="scenario-card best">
           <div class="best-badge">⭐ Referência</div>
@@ -1037,7 +1009,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Soft landing e Estruturação</div>
           <div class="scenario-earned"><span class="currency">R$</span>4.300</div>
           <div class="scenario-period">por mês · R$ 51.600 / ano</div>
-          <div class="scenario-breakdown">R$2.500 e R$1.800</div>
+          <div class="scenario-breakdown" style="display:none;">R$2.500 e R$1.800</div>
         </div>
         <div class="scenario-card">
           <div class="scenario-label">Otimista</div>
@@ -1045,7 +1017,7 @@ function showScenario(name) {
           <div class="scenario-ticket-avg">Mix negócios variado</div>
           <div class="scenario-earned"><span class="currency">R$</span>8.300</div>
           <div class="scenario-period">por mês · R$ 99.600 / ano</div>
-          <div class="scenario-breakdown">Soft landing, Estruturação, Empresa e Tributação</div>
+          <div class="scenario-breakdown" style="display:none;">Soft landing, Estruturação, Empresa e Tributação</div>
         </div>
       </div>
     </div>
